@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>The ISMA Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"
+      integrity="sha512-/AilQf/shuEGfh8c3DoIqcIqHZCKpiImSyt+fxIKJphHiNa6QMPb6AbDly6rkjmGr/5OZd35JtvVkbEKnCZO+A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!---<a href="#" class="downbounce" onclick="$.fn.fullpage.moveSectionDown()"
+      ><span></span>
+    </a>--->
+    <nav id="navbarmain" class="navbar navbar-expand-lg fixed-top">
+      <a
+        class="navbar-brand"
+        href="index.html"
+        style="color: white; font-weight: 700"
+        >The ISMA Project</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home-p">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#ml">Machine Learning</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#twitter-trends">Data Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#model-demo">Demo</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="form-inline my-2 my-lg-0">
+        <ul class="nav-link">
+          <li class="nav-item">
+            <a
+              href="https://github.com"
+              target="_blank"
+              class=""
+              style="color: white"
+              >Code</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="fullpage">
+      <div class="section" id="home">
+        <div class="center-wrap" id="home">
+          <h1 class="text-center" id="title-1">
+            Islamphobia in Social Media Analysis
+          </h1>
+          <div id="text-us" class="text-center">
+            <span class="color-gradient-red-yellow">
+              By Anshul Gupta, Welton Wang, and Timothy Trick
+            </span>
+          </div>
+          <div class="row" style="margin-top: 20px">
+            <div class="col-6 text-right">
+              <div class="frame">
+                <a href="#about-p">
+                  <button class="custom-btn btn-6">
+                    <span>Learn More</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="frame">
+                <button
+                  class="custom-btn-2 btn-11"
+                  onclick="window.open('http://github.com/theAnshulGupta/theISMAproject','_blank')"
+                >
+                  <span>Code</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <p></p>
+        </div>
+        <section
+          id="section02"
+          class="demo"
+          style="
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            margin-bottom: 50px;
+            left: 0;
+          "
+        >
+          <a href="#about-p"><span></span></a>
+        </section>
+        <div
+          style="
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            width: 46px;
+            height: 46px;
+            margin-left: -23px;
+          "
+        >
+          Scroll
+        </div>
+      </div>
+
+      <div id="about" style="margin-bottom: 60px" class="section">
+        <div class="row">
+          <div
+            class="col-lg-6 col-12"
+            style="
+              margin-top: 15px;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              position: absolute;
+              max-width: 80%;
+              min-width: 369px;
+            "
+          >
+            <h3 style="text-align: center">#PervyPasha</h3>
+            <h3 style="text-align: center">#GoBackWhereYouCameFrom</h3>
+            <h3 style="text-align: center">#DontSullyOurSoil</h3>
+            <div>
+              <p
+                style="
+                  margin-top: 15px;
+                  width: 80%;
+                  margin: 0 auto;
+                  max-width: 701px;
+                "
+              >
+                Inspired by the shocking hatred and social stigma towards
+                Muslims portrayed in Kamila Shamsie's
+                <span style="font-style: italic">Home Fire</span>, we set out to
+                analyze Islamophobia in a real-world context. <br /><br />What
+                better place to turn to
+                <span style="color: #1da1f2">Twitter</span> &amp;
+                <span style="color: #ff1b44">Parler</span>, a cess-pool of hate?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="inspiration" class="section">
+        <div
+          class="center-page"
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1050px;
+            padding-top: 40px;
+            padding-bottom: 5px;
+          "
+        >
+          <div class="flex-row">
+            <div class="flex-half" style="flex-basis: 100%">
+              <h2>Machine Learning</h2>
+              <p>
+                To analyze trends at scale, we built and trained an ensemble of
+                machine learning models to classify Islamophobia. Put simply,
+                processing natural language involves representing words as
+                mathematical vectors used to calculate a final output.
+              </p>
+              <p>
+                Take the term "Muslims are (not) Terrorists" for example. It
+                could be represented as:
+              </p>
+            </div>
+            <div class="flex-half" style="flex-basis: 85%">
+              <img
+                src="assets/text-embedding.svg"
+                style="width: 71%; height: auto"
+              />
+            </div>
+          </div>
+          <div class="flex-row" style="justify-content: center">
+            <div class="flex-half">
+              <h3 style="font-size: 36px">Training</h3>
+              <p>
+                To find suitable representations &amp; relationships between
+                words (weights), pre-labeled training data is required. Coupled
+                with some linear algebra, the most optimal representation of
+                words can be computed get a desired output. It's akin to finding
+                a line of best fit.
+              </p>
+            </div>
+            <div
+              class="flex-half"
+              style="display: flex; justify-content: center"
+            >
+              <img
+                src="assets/regression.svg"
+                id="regression"
+                style="margin-top: 10px; width: auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="machinelearning" class="section">
+        <div
+          class="center-page"
+          style="max-width: 1050px; padding-top: 20px; padding-bottom: 20px"
+        >
+          <h2>The Dataset</h2>
+          <p>
+            To build a dataset suitable for training the model, we hand-labeled
+            over 12,000 Twitter &amp; Parler posts, categorizing each post into
+            one of three categories:
+          </p>
+          <!-- <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+          </div> -->
+          <p style="font-size: 20px">
+            <b style="color: #2ecc71">None</b> - No Islamophobic content.
+          </p>
+          <div>
+            <div
+              class="arrow"
+              onclick="collapseDiv(this)"
+              data-controls="text-1"
+              data-arrow="arrow-1"
+              id="arrow-1"
+            >
+              <b>Examples</b>
+            </div>
+            <p id="text-1" class="collapse-text hidden">
+              "Steph Curry has played ten straight minutes. So impressive."<br />"The
+              2020 Election was Fraudulent! #maga"<br />"My Muslim friend was
+              called a terrorist in London today. People are #racist #idiots"<br />"You
+              can be a Muslim and not wear a hijab, you can wear the hijab
+              outside the school, Neutrality of the state is above any religious
+              edict. Religious freedom exists, outside government venues and
+              positions."
+            </p>
+          </div>
+          <p style="font-size: 20px">
+            <b style="color: #f8ab37">General</b> - Generalized Islamophobic
+            hate speech
+          </p>
+          <div>
+            <div
+              class="arrow"
+              onclick="collapseDiv(this)"
+              data-controls="text-2"
+              data-arrow="arrow-2"
+              id="arrow-2"
+            >
+              <b>Examples</b>
+            </div>
+            <p id="text-2" class="hidden collapse-text">
+              "Muslims in #Congress are taking over our governments, Keep them
+              out!"<br />"The 2020 Election was Fraudulent and rigged by
+              muhammad followers! #maga"<br />"You're a Muslim go marry your
+              brother"<br />"There's 39,000 extreme muslims in Britain atm. Over
+              3,000 are watched 24/7 Believe it needs 70 security personnel for
+              each one. Costs hundreds of billions per year. "
+            </p>
+          </div>
+          <p style="font-size: 20px">
+            <b style="color: #da2c4d">Terrorism</b> - Hate speech associating
+            Islam/Muslims with terrorism or violent activities
+          </p>
+          <div>
+            <div
+              class="arrow"
+              onclick="collapseDiv(this)"
+              data-controls="text-3"
+              data-arrow="arrow-3"
+              id="arrow-3"
+            >
+              <b>Examples</b>
+            </div>
+            <p id="text-3" class="hidden collapse-text">
+              "Muslims are Radical Islamic terrorists"<br />"We need to get
+              these violent criminals out of our government. #Muslims"<br />"The
+              Quran incites violence against the good people of our
+              republic."<br />"Not all, but a significant amount of terrorism in
+              the world these days is due to Islamic teachings and principles.
+              Let's adhere to the truth and accept there is a problem."
+            </p>
+          </div>
+          <!-- <p style="font-style: italic; margin-top: 10px">
+            Note that all the examples presented on this site are from actual
+            data used to train our models.
+          </p> -->
+        </div>
+      </div>
+      <div id="data" style="margin-bottom: 50px" class="section">
+        <div class="center-page" style="max-width: 1050px">
+          <h2>Language is Nuanced</h2>
+          <p>
+            Despite our initial assumptions, it turns out understanding hate
+            speech is a lot harder than it sounds, especially given that many
+            tweets happen
+            <span style="font-style: italic">without</span> context.
+          </p>
+          <p style="margin-bottom: 20px">Take the following:</p>
+
+          <div class="tabset">
+            <!-- Tab 1 -->
+            <div
+              type="radio"
+              name="tabset"
+              id="tab1"
+              class="tab-label active-select"
+              data-controls="implicit"
+              onclick="tabToggle(this);"
+              check
+            >
+              Implicit
+            </div>
+            <!-- Tab 2 -->
+            <div
+              type="radio"
+              name="tabset"
+              id="tab2"
+              class="tab-label"
+              data-controls="slander"
+              onclick="tabToggle(this);"
+            >
+              Slander
+            </div>
+            <!-- Tab 3 -->
+            <div
+              type="radio"
+              name="tabset"
+              id="tab3"
+              class="tab-label"
+              data-controls="vague"
+              onclick="tabToggle(this);"
+            >
+              Vague
+            </div>
+            <div class="tab-panels">
+              <section id="implicit" class="tab-panel">
+                <h3 style="font-size: 33px">
+                  Implicit: "Three terrorists bombers of the station were
+                  Muslim."
+                </h3>
+                <p>
+                  It's not explicitly calling Muslims terrorists, or associating
+                  Islam itself with an negative values. Yet, as Shamsie writes,
+                  "terrorists were never described by the media as 'British
+                  Terrorists'...always something interposed between their
+                  Britishness and terrorism." Therefore, we interpreted the
+                  conscious decision to name them as Muslim, instead of another
+                  label, as stigmatizing the Muslim population, reinforcing
+                  untrue stereotypes, and therefore Islamophobic.
+                </p>
+              </section>
+              <section id="slander" class="tab-panel" style="display: none">
+                <h3 style="font-size: 33px">
+                  Slander: "Obama is Muslim" vs "John Doe is Muslim"
+                </h3>
+                <p>
+                  A surprisingly large number of tweets claimed Obama was a
+                  Muslim. Saying someone is a Muslim doesn't necessarily
+                  constitute as hate speech. Yet, in context of Obama (the
+                  President) not being a Muslim, calling him a Muslim would be
+                  interprested by most as an insult. Therefore, the word
+                  "Muslim" carries the same purpose in the sentence as, say,
+                  "evil." <br /><br />
+                </p>
+              </section>
+              <section id="vague" class="tab-panel" style="display: none">
+                <h3 style="font-size: 33px">Vague: "Is he a Muslim?"</h3>
+                <p>
+                  Given the context that this was found on Parler, it's mostly
+                  likely intended as an insult. It's easy to see it as a reply
+                  to "X is an idiot," in which case it becomes a derogatory
+                  term. Yet, such context is not available to the machine
+                  learning model, and presented on another website, it could
+                  very well mean something totally different. As such, it
+                  wouldn't be reasonable to call this statement alone hate
+                  speech.
+                  <br />
+                </p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="stats" class="section">
+        <div
+          class="center-page"
+          style="max-width: 1050px; padding-top: 20px; padding-bottom: 20px"
+        >
+          <h2>The Model</h2>
+          <p style="margin-bottom: 10px">
+            After labeling the dataset, we trained &amp; tuned ~ 30 variations
+            of models across 12 hours, acheiving 93% 3-fold cross-validated
+            accuracy on a validation dataset. We picked three of the best
+            performing models, trained on slightly varied data and merged the
+            probability outputs from each model with a logistic regression
+            classifier.
+          </p>
+          <p style="margin-bottom: 10px">Yet, 93% isn't perfect.</p>
+          <p style="margin-bottom: 10px">
+            We noticed several weakness in the models. These include:
+          </p>
+          <div class="tabset">
+            <div
+              type="radio"
+              name="tabset"
+              id="secondTab1"
+              class="tab-label active-select lang-label"
+              data-controls="Referentials"
+              onclick="tabToggle(this);"
+            >
+              Referentials
+            </div>
+            <div
+              type="radio"
+              name="tabset"
+              id="secondTab2"
+              class="tab-label lang-label"
+              data-controls="Negatives"
+              onclick="tabToggle(this);"
+              check
+            >
+              Negatives
+            </div>
+            <div
+              type="radio"
+              name="tabset"
+              id="secondTab3"
+              class="tab-label lang-label"
+              data-controls="Quotations"
+              onclick="tabToggle(this);"
+            >
+              Quotations
+            </div>
+            <div
+              type="radio"
+              name="tabset"
+              id="secondTab4"
+              class="tab-label lang-label"
+              data-controls="Variations"
+              onclick="tabToggle(this);"
+            >
+              Text Variations
+            </div>
+            <div
+              type="radio"
+              name="tabset"
+              id="secondTab5"
+              class="tab-label lang-label"
+              data-controls="Language"
+              onclick="tabToggle(this);"
+            >
+              Linguistic Style
+            </div>
+
+            <div class="tab-panels">
+              <section id="Referentials" class="tab-panel">
+                <h3 style="font-size: 33px">Complex Referentials</h3>
+                <p>
+                  Results are varied when it comes to multiple layers of
+                  referential statements, such as:<br />
+                  "Islam is a bad religion. Some people agree with this
+                  statement (referring to the 1st statement). Others do not
+                  agree (referring to the 1st statement). I'm in agreement with
+                  the latter (referring to the 3rd statement), and those in the
+                  former group are wrong (referring to the 2nd statement). "
+                  <br />
+                  <br />
+                </p>
+              </section>
+              <section id="Negatives" class="tab-panel" style="display: none">
+                <h3 style="font-size: 33px">Triple Negatives</h3>
+                <p>
+                  Results are inaccurate past a double negative ("not not"),
+                  such as "Muslims are not not not not bad."
+                  <br />
+                  <br />
+                  <br />
+                </p>
+              </section>
+              <section id="Quotations" class="tab-panel" style="display: none">
+                <h3 style="font-size: 33px">Quotations</h3>
+                <p>
+                  Results are varied when it comes to quotations. For
+                  example:<br />"He told me that 'Muslims are bad.' I told him
+                  he was wrong." is classified correctly as not hate speech.
+                  <br />"'Screw You' said the Muslim man on the street." is
+                  incorrectly classified as hate speech.
+                  <br />
+                  <br />
+                </p>
+              </section>
+              <section id="Variations" class="tab-panel" style="display: none">
+                <h3 style="font-size: 33px">
+                  Hashtags, Slang, Text Variations
+                </h3>
+                <p>
+                  Results are varied when it comes to hashtags, slang, and
+                  variations of text [such as abbreviations] (because of how
+                  they are tokenized/represented), though it is generally
+                  accurate and could be addressed further through data
+                  normalization.
+                  <br />
+                  <br />
+                  <br />
+                </p>
+              </section>
+              <section id="Language" class="tab-panel" style="display: none">
+                <h3 style="font-size: 33px">Language Style</h3>
+                <p>
+                  The model was trained on Twitter + Parler social media data,
+                  and therefore is less accurate when applied to other forms of
+                  writing/social media content (which have their own linguistic
+                  styles, such as Reddit).
+
+                  <br />
+                  <br />
+                  <br />
+                </p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="trends" class="section" style="">
+        <div
+          class="center-page"
+          style="padding-top: 20px; padding-bottom: 20px; max-width: 1050px"
+        >
+          <h2>Data Analysis</h2>
+          <p style="margin-bottom: 35px">
+            Using our model, we analyzed 939,908 tweets containing the word
+            "Muslim" from September 2nd, 2012 to December 4th, 2021. Here's what
+            we found.
+          </p>
+
+          <h3 style="font-size: 33px">
+            No correlation between terrorism incidents and % of Islamophobic
+            tweets
+          </h3>
+          <p style="margin-bottom: 20px">
+            We zoomed in on data for several major terrorism incidents (2015
+            Paris Attacks, 2016 Brussels Bombings, 2021 Afganistan + Liverpool
+            attacks) and calculated the % of tweets that contained either
+            general ot terrorism-related Islamophobic (Formula: tweets tagged as
+            Islamophobic ÷ total tweets). Contrary to what we initially
+            hypothesized, we found no correlation between such incidents and
+            increases in hate speech. (Below: 2 Day M.A, 30 Day Interval)
+          </p>
+          <div class="flex-charts" style="margin-bottom: 35px">
+            <img src="assets/trend_3.svg" />
+
+            <img src="assets/trend_5.svg" /><img src="assets/trend_7.svg" />
+          </div>
+        </div>
+      </div>
+      <div id="trends2" class="section" style="height: 969px">
+        <div
+          class="center-page"
+          style="
+            margin: 0 auto;
+            max-width: 1050px;
+            display: block;
+            position: relative;
+            top: 0%;
+            left: 0%;
+            transform: none;
+            padding-top: 100px;
+            padding-bottom: 100px;
+          "
+        >
+          <h3 style="font-size: 33px">
+            Decrease in Terrorism Related Islamophobic Speech
+          </h3>
+          <div class="flex-row" style="">
+            <div class="flex-half">
+              <p style="padding-right: 14px">
+                We did, however, find a downward trend of % of Islamphobic
+                tweets that were terrorism related from 2012 to 2021 (Formula:
+                tweets tagged as Terrorism ÷ tweets tagged as Islamophobic ).
+                Overall, there was a ~20% reduction in terrorism-related
+                Islamophobia across the 9 years. (Right: Sampled 365 Day M.A., 9
+                Year Interval)
+              </p>
+            </div>
+            <div class="flex-half" style="flex-basis: 49%">
+              <img
+                src="assets/overall_trend_3.svg"
+                style="
+                  width: 100%;
+
+                  margin-top: 10px;
+                "
+              />
+            </div>
+          </div>
+          <h3 style="font-size: 33px; margin-top: 35px">
+            Impact of Political Environment
+          </h3>
+          <div class="flex-charts" style="margin-bottom: 20px">
+            <img
+              src="assets/total_trends_1.svg?qc"
+              style="width: 100%; height: auto"
+            />
+          </div>
+          <p style="margin-bottom: 20px">
+            We also noted that Trump's presidency was strongly correlated with a
+            sharp uptick in Islamophobic tweets. Major political events seem
+            also to have varying forms of impact as expected. It's worth
+            pointing out that correlation is not necessarily causation.
+          </p>
+        </div>
+      </div>
+      <div id="trends3" class="section">
+        <div
+          class="center-page"
+          style="
+            margin: 0 auto;
+            max-width: 1050px;
+            display: block;
+            position: relative;
+            top: 0%;
+            left: 0%;
+            transform: none;
+            padding-top: 100px;
+            padding-bottom: 100px;
+          "
+        >
+          <div class="row">
+            <div class="col-lg-6 col-12" style="align-self: center">
+              <h3 style="font-size: 33px">Keyword to Hate Correlation</h3>
+              <p style="margin-bottom: 20px">
+                Besides time-based trends, we also look at the % of tweets
+                classified as hate speech for a given keyword. We analyzed an
+                additional 131,394 tweets (~5000 for each keyword) across 48
+                hours and charted the average percentage (Formula: tweets tagged
+                as Islamophobic ÷ total tweets) for each keyword.
+              </p>
+            </div>
+            <div class="col-lg-6 col-12">
+              <img
+                src="/assets/chart_words.svg"
+                id="chart_words"
+                style="width: 100%; height: auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="demo"
+        style="padding-top: 10px; padding-bottom: 10px"
+        class="section"
+      >
+        <div
+          class="center-page"
+          style="max-width: 1050px; padding-top: 40px; padding-bottom: 0px"
+        >
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <h3 class="inputinfo" style="font-size: 35px">
+                Input Text/Tweet
+              </h3>
+
+              <p class="input-label">
+                <span style="color: #2ecc71; font-weight: 700">Neutral</span>:
+                Absence of Islamophobic hate speech
+              </p>
+              <p class="input-label">
+                <span style="color: #f8ab37; font-weight: 700">General</span>:
+                Non-specific (cultural stereotypes, insults, slander, etc)
+                Islamophobic hate speech
+              </p>
+              <p class="input-label">
+                <span style="color: #da2c4d; font-weight: 700">Terrorism</span>:
+                Hate speech involving the association of Islam with terrorism
+              </p>
+              <p class="inputinfo" style="font-size: 16px">
+                Analysis is run on three language models trained on slightly
+                varied data. Results are aggregated by a weighted classifier
+                based on the probabilities from each model and are shown below.
+                They may take several seconds to appear.
+              </p>
+            </div>
+            <div class="col-lg-6 col-12">
+              <form action="" id="formInput">
+                <textarea
+                  id="textForm"
+                  placeholder="Enter Data/Text Here"
+                  required=""
+                  autocomplete="off"
+                ></textarea
+                ><br />
+                <div style="width: 100%; margin-top: 15px">
+                  <div class="row">
+                    <div class="col-sm-4 col-12">
+                      <input
+                        type="button"
+                        onclick=""
+                        class="custom-btn btn-13"
+                        style="cursor: pointer"
+                        id="textSubmit"
+                        value="Submit"
+                      />
+                    </div>
+                    <div class="col-sm-8 col-12">
+                      <div class="frame">
+                        <button
+                          disabled=""
+                          class="custom-btn-3 btn-10"
+                          id="result"
+                        >
+                          <div id="result-text">Enter Text for Result</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div id="stats2">
+            <div class="text-center">
+              <h4 id="large-result">Result</h4>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-6 col-12">
+                <table
+                  id="stats-1"
+                  class="
+                    charts-css
+                    bar
+                    show-labels show-primary-axis show-data-axes show-heading
+                  "
+                >
+                  <caption id="model-1-caption">
+                    Model 1
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Models</th>
+                      <th scope="col">Result</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row neutral">Neutral</th>
+                      <td id="stats-1-n" style="--size: 0"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row racism">General</th>
+                      <td id="stats-1-r" style="--size: 0"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row terrorism">Terrorism</th>
+                      <td id="stats-1-t" style="--size: 0"></td>
+                    </tr>
+                    <!-- <tr>
+                <th scope="row">Equalizer</th>
+                <td id="stats-1-e" style="--size: 0"></td>
+              </tr> -->
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-12">
+                <table
+                  id="stats-1"
+                  class="
+                    charts-css
+                    bar
+                    show-labels show-primary-axis show-data-axes show-heading
+                  "
+                >
+                  <caption id="model-2-caption">
+                    Model 2
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Models</th>
+                      <th scope="col">Result</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row neutral">Neutral</th>
+                      <td id="stats-2-n" style="--size: 0"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row racism">General</th>
+                      <td id="stats-2-r" style="--size: 0"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row terrorism">Terrorism</th>
+                      <td id="stats-2-t" style="--size: 0"></td>
+                    </tr>
+                    <!-- <tr>
+                  <th scope="row">Equalizer</th>
+                  <td id="stats-2-e" style="--size: 0"></td>
+                </tr> -->
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-4 col-sm-6 col-12">
+                <table
+                  id="stats-1"
+                  class="
+                    charts-css
+                    bar
+                    show-labels show-primary-axis show-data-axes show-heading
+                  "
+                >
+                  <caption id="model-3-caption">
+                    Model 3
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Models</th>
+                      <th scope="col">Result</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row neutral">Neutral</th>
+                      <td id="stats-3-n" style="--size: 0"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row racism">General</th>
+                      <td id="stats-3-r" style="--size: 0"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row terrorism">Terrorism</th>
+                      <td id="stats-3-t" style="--size: 0"></td>
+                    </tr>
+                    <!-- <tr>
+                  <th scope="row">Equalizer</th>
+                  <td id="stats-3-e" style="--size: 0"></td>
+                </tr> -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer" class="section">
+        <div
+          class="container"
+          id="footer-text"
+          style="
+            max-height: 94px;
+            position: absolute;
+            height: 100%;
+            top: 0px;
+            max-width: 100%;
+          "
+        >
+          <div
+            class="row"
+            style="
+              top: 50%;
+              position: absolute;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 90%;
+              max-width: 1050px;
+              margin: 0 auto;
+            "
+          >
+            <div
+              class="col-lg-6 text-lg-left text-center"
+              style="max-width: 70%; flex-basis: 70%; width: 70%"
+            >
+              <div class="copyright">
+                © 2021 – The ISMA Project by
+                <strong style="font-weight: 600"
+                  >Anshul Gupta, Welton Wang, and Timothy Trick</strong
+                >
+              </div>
+            </div>
+            <div class="col-lg-6" style="max-width: 30%">
+              <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+                <a href="index.html">Home</a>
+                <a href="credits.html">Credits</a>
+                <a
+                  target="_blank"
+                  href="https://github.com/theAnshulGupta/theISMAproject"
+                  >Code</a
+                >
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!-- ! Footer -->
+      </footer>
+      <div class="progress-wrap">
+        <svg
+          class="progress-circle svg-content"
+          width="100%"
+          height="100%"
+          viewbox="-1 -1 102 102"
+        >
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+      </div>
+
+      <!-- partial -->
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"
+      ></script>
+      <script src="/assets/fullpage.js"></script>
+      <script type="text/javascript" src="assets/fullpage.js"></script>
+      <script src="./script.js?v=1.1.6"></script>
+    </div>
+  </body>
+</html>
