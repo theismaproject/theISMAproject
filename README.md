@@ -1,2 +1,1 @@
-# The ISMA Project 
-By Anshul Gupta, Welton Wang
+# The ISMA Project
